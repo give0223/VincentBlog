@@ -1,0 +1,102 @@
+/* global setting */
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* header */
+
+nav{
+    display: flex;
+}
+
+nav a{
+    margin: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .8s;
+    
+}
+
+nav a:hover{
+    background: #000;
+    color: rgb(216, 145, 65);
+}
+
+/* skill bar */
+
+.skill_bar{
+    background-color: rgba(250, 137, 45, 0.788);
+    box-sizing: border-box;
+    float: left;
+    height: 20px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    width: 150px;
+}
+
+.progress{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.progress:before{
+    position: absolute;
+    animation: slideIn 4s ease-out;
+    background-color: cornflowerblue;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+@keyframes slideIn{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* skill bar End */
+
+
+/* footer */
+
+.contact_footer::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact_contain{
+    display: flex;
+    position: relative;
+    height: 300px;
+}
+
+.contact_left{
+    position: absolute;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.contact_right{
+    position: absolute;
+    height: 100%;
+    background-color: rgb(134, 134, 134);
+}
