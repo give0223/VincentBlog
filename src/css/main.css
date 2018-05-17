@@ -30,6 +30,12 @@ a{
 
 nav{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_contant{
+    margin: 30px 0;
 }
 
 nav a{
