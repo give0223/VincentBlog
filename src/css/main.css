@@ -27,12 +27,25 @@ a{
     width: 100%;
 }
 
+.sticky{
+    background: #000;
+}
+
+.sticky a{
+    color: #fff;
+}
+
 /* header */
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 110;
 }
 
 .nav_contant{
@@ -51,6 +64,13 @@ nav a{
 nav a:hover{
     background: #000;
     color: rgb(216, 145, 65);
+}
+
+
+/* container */
+
+.container{
+    margin-top: 78px;
 }
 
 .header_contant{
@@ -226,7 +246,7 @@ footer{
     box-sizing: border-box;
     border-radius: 50%;
     padding: 8px 11px;
-    transition: transform 0.8s;
+    transition: transform 0.5s;
 }
 
 .social_icon a{
@@ -234,7 +254,7 @@ footer{
 }
 
 .social_icon:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .contact_left{
